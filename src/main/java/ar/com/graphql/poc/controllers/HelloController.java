@@ -16,6 +16,6 @@ public class HelloController {
     @GetMapping
     @RequestMapping("/hello")
     public String hello() {
-        return "Hola mundo";
+        return "Hola mundo!!!";
     }
 }

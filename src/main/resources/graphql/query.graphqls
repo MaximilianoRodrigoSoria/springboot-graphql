@@ -1,6 +1,14 @@
+type Cliente
+    {
+        nombre:String
+        apellido:String
+        dni:String
+        email:String
+    }
+
 type Query {
-
     hello:String!
-
     suma(a:Int, b:Int):Int
+    getCliente:Cliente
+    getClientes:[Cliente]
 }
