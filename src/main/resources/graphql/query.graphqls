@@ -1,0 +1,6 @@
+type Query {
+
+    hello:String!
+
+    suma(a:Int, b:Int):Int
+}
