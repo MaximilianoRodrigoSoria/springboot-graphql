@@ -1,9 +1,17 @@
 type Cliente
-    {
+    {   id:Int
         nombre:String
         apellido:String
         email:String
     }
+
+input ClienteInput
+{   id:Int
+    nombre:String
+    apellido:String
+    email:String
+}
+
 
 extend type Query {
     getCliente(id:Int):Cliente
@@ -12,8 +20,8 @@ extend type Query {
 }
 
 extend type Mutation {
-    saveCliente(nombre:String , apellido:String , email:String ):Cliente
-    updateCliente(id:Int, nombre:String , apellido:String , email:String ):Cliente
+    saveCliente(cliente:ClienteInput!):Cliente
+    updateCliente(cliente:ClienteInput!):Cliente
     deleteCliente(id:Int):Cliente
 }
 
