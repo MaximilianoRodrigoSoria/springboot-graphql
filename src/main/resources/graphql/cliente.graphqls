@@ -10,3 +10,13 @@ extend type Query {
     getClientes:[Cliente]
     
 }
+
+extend type Mutation {
+    saveCliente(nombre:String , apellido:String , email:String ):Cliente
+    updateCliente(id:Int, nombre:String , apellido:String , email:String ):Cliente
+    deleteCliente(id:Int):Cliente
+}
+
+
+
+

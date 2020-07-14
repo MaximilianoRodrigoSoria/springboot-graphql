@@ -38,7 +38,7 @@ public class ClienteServiceImpl implements ClienteService {
 
 	@Override
 	public void save(Cliente cliente) {
-		// TODO Auto-generated method stub
+        clienteRespository.save(cliente);
 		
 	}
 }
