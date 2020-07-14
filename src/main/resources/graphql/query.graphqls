@@ -8,6 +8,7 @@ type Cliente
 type Query {
     hello:String!
     suma(a:Int, b:Int):Int
-    getCliente(a:Int):Cliente
+    getCliente(id:Int):Cliente
     getClientes:[Cliente]
+    
 }
