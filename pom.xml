@@ -102,6 +102,12 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <!-- GRAPHQL VOYAGER -->
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>voyager-spring-boot-autoconfigure</artifactId>
+            <version>5.0.2</version>
+        </dependency>
     </dependencies>
 
     <build>
