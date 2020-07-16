@@ -1,0 +1,13 @@
+type Compra{
+    id:Int
+    cantidad:Int
+    date:Date
+    status:String
+    cliente:Cliente
+    producto:Producto
+}
+extend type Query {
+   getCompra(id:Int):Compra
+
+    
+}

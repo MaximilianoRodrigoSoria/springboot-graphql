@@ -1,9 +1,11 @@
 package ar.com.graphql.poc.services.impl;
 
+
 import ar.com.graphql.poc.persistence.entities.Compra;
 import ar.com.graphql.poc.persistence.repositories.CompraRepository;
 import ar.com.graphql.poc.services.CompraService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,5 +47,11 @@ public class CompraServiceImpl implements CompraService {
 	 @Autowired
 	 public void setCompraRepository(CompraRepository compraRepository)
 	  { this.compraRespository = compraRepository;}
-	
+
+
+	public List<Compra> findAllPageable(Pageable pageable) {
+		return compraRespository.findAll(pageable).getContent();
+	}
+
+
 }

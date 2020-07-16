@@ -7,8 +7,8 @@ INSERT INTO producto (nombre, descripcion, precio) VALUES('Reloj', 'Casio', 500.
 INSERT INTO producto (nombre, descripcion, precio) VALUES('Perfumante', 'Perfumante de tela', 300.00);
 
 INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(1, 50, NOW(), 'OK', 1,1);
-INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(2, 50, NOW(), 'OK', 1,2);
-INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(3, 50, NOW(), 'OK', 1,3);
-INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(4, 50, NOW(), 'OK', 2,2);
-INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(5, 50, NOW(), 'OK', 3,1);
-INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(6, 50, NOW(), 'OK', 3,3);
+INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(2, 23, NOW(), 'OK', 1,2);
+INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(3, 34, NOW(), 'OK', 1,3);
+INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(4, 66, NOW(), 'OK', 2,2);
+INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(5, 12, NOW(), 'OK', 3,1);
+INSERT INTO compra (id, cantidad, date ,status,id_cliente,id_producto) VALUES(6, 16, NOW(), 'OK', 3,3);
